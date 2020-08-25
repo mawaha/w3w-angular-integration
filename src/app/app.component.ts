@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'my-app',
@@ -8,4 +8,9 @@ import { FormBuilder } from '@angular/forms';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  value = 'asdf';
+
+  onSubmit(f: NgForm) {
+    console.log(f.value);
+  }
 }
