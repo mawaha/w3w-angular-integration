@@ -2,9 +2,7 @@
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <h1>{{ name }} POC Form</h1>
     <div>
-      <what3words-autosuggest
-        debug="true"
-      >
+      <what3words-autosuggest>
         <input type="text" name="3wa" ngModel />
       </what3words-autosuggest>
     </div>
